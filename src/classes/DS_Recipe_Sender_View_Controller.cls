@@ -48,6 +48,10 @@ public with sharing class DS_Recipe_Sender_View_Controller {
             output += '<p><b>To complete and send the envelope, redirect the user to <a href = "' + 
             		  sender_view_url + '" target="_blank">DocuSign</a></b></p>';
             output += '<p>The redirect address is ' + sender_view_url + '</p>';
+            output += '<p><b>Note:</b> the sender view url can only be used for a couple of minutes after ' +
+                      'it has been created. Do NOT store the url for later use. Instead, ' +
+                      'generate the URL immediately before you redirect the user\'s ' + 
+                      'browser to the URL.</p>';
             output += '<p>After the sender has finished sending the envelope, his ' +
                       'browser will be redirected back to your app with some query fields added. Example: </p>' +
                       '<p>http://www.foo.com/?envelopeId=dad2e78b-9d35-47c7-8c13-f197dac08f10&event=Send</p>';
@@ -116,6 +120,10 @@ public with sharing class DS_Recipe_Sender_View_Controller {
             envelope_id = result.EnvelopeID;
             System.debug('Create envelope success, envelope_id = ' + envelope_id );
         	// Get a Sender View url
+            // NOTE: the sender view url can only be used for a couple of minutes after
+            //       it has been created. Do NOT store the url for later use. Instead,
+            //       generate the URL immediately before you redirect the user's 
+            //       browser to the URL.
             sender_view_url = api_sender.RequestSenderToken(
             	envelope_id, account_id, sender_return_url);
             System.debug('RequestSenderToken success, url = ' + sender_view_url);
