@@ -1,5 +1,6 @@
 # SFDC - DocuSign Embedded Sending
 This repo enables you to send an envelope for signing from an Apex class on SFDC. 
+
 The envelope is sent using *embedded sending*: The sender is redirected to a specific
 DocuSign URL. Via that URL, the sender can add documents to the envelope, and add
 *fields* for signing to the envelope's documents.
@@ -27,13 +28,13 @@ For User Applications, it is preferable that each DocuSign sender logs in to use
 ### Authentication and Apex proxy classes
 Please see the instructions from the [SFDC Hello World recipe](https://github.com/docusign/sfdc-recipe-hello-world/blob/master/README.md) for the following steps:
 
-\2. Create the Named Credential
+2. Create the Named Credential
 
-\3. Grant Access for Users to Update their own DocuSign Credentials
+3. Grant Access for Users to Update their own DocuSign Credentials
 
-\4. Each User: Enable Their DocuSign Authentication
+4. Each User: Enable Their DocuSign Authentication
 
-\5. Create the Apex proxy classes
+5. Create the Apex proxy classes
 
 ## 6. Install and configure the Recipe
 
