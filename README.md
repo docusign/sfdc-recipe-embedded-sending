@@ -11,7 +11,7 @@ After the sender completes the sending process:
 1. The sender's browser is redirected back to your SFDC app, to the url that you designated.
 The redirect includes query parameters with the envelope's ID and the outcome of the sending process.
 
-The Apex class uses the DocuSign SOAP API.
+The Apex class uses the [RequestSenderToken](https://www.docusign.com/p/APIGuide/APIGuide.htm#Embedding Group/RequestSenderToken.htm%3FTocPath%3DDocuSign%2520Service%2520API%2520Information%7CEmbedding%2520Function%2520Group%7CRequestSenderToken%7C_____0) method from the DocuSign SOAP API.
 
 ## Installation 
 
