@@ -15,8 +15,8 @@ The Apex class uses the [RequestSenderToken](https://www.docusign.com/p/APIGuide
 
 ## Installation 
 
-### 1. Install DocuSign for Salesforce
-Install [DocuSign for Salesforce from AppExchange](https://appexchange.salesforce.com/listingDetail?listingId=a0N30000001taX4EAI) 
+### 1. Install DocuSign eSignature for Salesforce
+Install [DocuSign for eSignature Salesforce from AppExchange](https://appexchange.salesforce.com/listingDetail?listingId=a0N30000001taX4EAI) 
 
 ### Authentication via Named Credential
 There are multiple ways to set up authentication on Salesforce with DocuSign Signature APIs.
